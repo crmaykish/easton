@@ -1,0 +1,40 @@
+$font-stack: Helvetica, sans-serif;
+$navbar-height: 40px;
+
+$color-light: #EEEEEE;
+$color-medium: #333333;
+$color-dark: #232323;
+
+body {
+    font: 100% $font-stack;
+    background-color: $color-light;
+    color: $color-dark;
+    padding-top: $navbar-height;
+}
+
+.navbar {
+    width: 100%;
+    height: $navbar-height;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: $color-dark;
+    color: $color-light;
+    display: flex;
+    align-items: center;
+
+    .title {
+        padding-left: 20px;
+    }
+
+    #time {
+        margin-left: auto;
+        padding-right: 20px;
+    }
+}
+
+#map {
+    width: 640px;
+    height: 480px;
+    border: 2px solid $color-dark;
+}
